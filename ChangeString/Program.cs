@@ -7,12 +7,14 @@ namespace ChangeString
         static void Main(string[] args)
         {
             Console.WriteLine("Write a sentence please");
-            var sentence = Console.WriteLine("");
+            var sentence = Console.ReadLine()!;
 
             Console.WriteLine("Now write a letter");
-            var letter = Console.WriteLine("");
+            var letter = Console.ReadLine()!;
 
-            Console.WriteLine(letter);
+            Console.WriteLine("Yor new sentence is: " + sentence.Replace(letter, ""));
+
+            Console.ReadKey(intercept: true);
         }
     }
 }
