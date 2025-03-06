@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Permissions;
+using HeroPerks;
 
 namespace HeroPerk
 {
@@ -7,23 +8,27 @@ namespace HeroPerk
     {
         private static void Main(string[] args)
         {
-            switch (exp)
+            for (string s in args)
             {
-                case w:
-                    Code;
-                    break;
+                switch (char r in string s)
+                {
+                    case w:
+                        myRoles ^=Perks.WarpShift;
+                        break;
                 
-                case a:
-                    Code;
-                    break;
+                    case a:
+                        myRoles ^=Perks.AutoHeal;
+                        break;
                 
-                case s:
-                    Code;
-                    break;
+                    case s:
+                        myRoles ^=Perks.Stealth;
+                        break;
                 
-                case d:
-                    Code;
-                    break;
+                    case d:
+                        myRoles ^=Perks.DoubleJump;
+                        break;
+
+                }
             }
         }
     }
