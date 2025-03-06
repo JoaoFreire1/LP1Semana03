@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Permissions;
 
 namespace HeroPerk
 {
@@ -6,9 +7,23 @@ namespace HeroPerk
     {
         private static void Main(string[] args)
         {
-            foreach (string palavra in args)
+            switch (exp)
             {
-
+                case w:
+                    Code;
+                    break;
+                
+                case a:
+                    Code;
+                    break;
+                
+                case s:
+                    Code;
+                    break;
+                
+                case d:
+                    Code;
+                    break;
             }
         }
     }
