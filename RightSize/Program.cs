@@ -4,7 +4,7 @@ namespace RightSize
 {
     public class Program
     {
-        private static void Main(strings args)
+        private static void Main(string [] args)
         {
             foreach (string s in args)
             {
