@@ -6,7 +6,7 @@ namespace ArrayMul
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            Console.WriteLine(args[2]);
         }
     }
 }
