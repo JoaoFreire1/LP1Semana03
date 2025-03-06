@@ -1,15 +1,12 @@
 ﻿using System;
 
-namespace HeroPerk
+namespace Pow2Until
 {
     public class Program
     {
         private static void Main(string[] args)
         {
-            foreach (string palavra in args)
-            {
-
-            }
+            Console.WriteLine("Hello LP1!");
         }
     }
 }
