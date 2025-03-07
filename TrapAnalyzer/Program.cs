@@ -63,8 +63,12 @@ namespace TrapAnalyzer
                     if ((gear & PlayerGear.Boots) == PlayerGear.Boots)
                         return true;
                     break;
+                default:
+                    return false;
             }
-
+            
+            return false;
+        }
         /// <summary>
         /// Display information on wether the player survived the trap or not.
         /// </summary>
@@ -73,5 +77,5 @@ namespace TrapAnalyzer
         {
             Console.WriteLine($"Test")
         }
-    }
+    
 }
