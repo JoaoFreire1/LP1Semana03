@@ -49,19 +49,27 @@ namespace TrapAnalyzer
             {
                 case TrapType.FallingRocks:
                     if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet)
+                    {
                         return true;
+                    }
                     break;
                 case TrapType.SpinningBlades:
                     if ((gear & PlayerGear.Shield) == PlayerGear.Shield)
+                    {
                         return true;
+                    }
                     break;
-                case Trap.Type.PoisonGas:
-                    if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet) and ((gear & PlayerGear.Shield) == PlayerGear.Shield)
+                case TrapType.PoisonGas:
+                    if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet) and ((gear & PlayerGear.Shield) == PlayerGear.Shield);
+                    {
                         return true;
+                    }
                     break;
-                case Trap.Type.LavaPit:
+                case TrapType.LavaPit:
                     if ((gear & PlayerGear.Boots) == PlayerGear.Boots)
+                    {
                         return true;
+                    }
                     break;
                 default:
                     return false;
@@ -80,4 +88,4 @@ namespace TrapAnalyzer
                 : $"Lose {trap}.");
         }
     
-}
+}}
