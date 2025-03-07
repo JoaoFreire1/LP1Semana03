@@ -66,7 +66,7 @@ namespace TrapAnalyzer
                 default:
                     return false;
             }
-            
+
             return false;
         }
         /// <summary>
@@ -75,7 +75,9 @@ namespace TrapAnalyzer
         /// <param name="trap">The trap the player has fallen into.</param>
         private static void DisplayResult(TrapType trap, bool survives)
         {
-            Console.WriteLine($"Test")
+            Console.WriteLine(survives
+                ? $"Win {trap}!"
+                : $"Lose {trap}.");
         }
     
 }
