@@ -25,9 +25,17 @@ namespace TrapAnalyzer
         /// <returns>The player gear.</returns>
         private static PlayerGear ParseGear(string[] args)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            PlayerGear gear = PlayerGear.None;
+
+            for (int counter = 1; counter < args.Length; counter++)
+            {
+                if (Enum.TryParse(args[counter], out PlayerGear parsedGear))
+                {
+                    gear |= parsedGear;
+                }
+            }
+
+            return gear;
         }
 
         /// <summary>
