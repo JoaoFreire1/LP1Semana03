@@ -56,7 +56,7 @@ namespace TrapAnalyzer
                         return true;
                     break;
                 case Trap.Type.PoisonGas:
-                    if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet) && ((gear & PlayerGear.Shield) == PlayerGear.Shield)
+                    if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet) and ((gear & PlayerGear.Shield) == PlayerGear.Shield)
                         return true;
                     break;
                 case Trap.Type.LavaPit:
