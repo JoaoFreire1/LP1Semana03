@@ -53,24 +53,28 @@ namespace TrapAnalyzer
                         return true;
                     }
                     break;
+
                 case TrapType.SpinningBlades:
                     if ((gear & PlayerGear.Shield) == PlayerGear.Shield)
                     {
                         return true;
                     }
                     break;
+
                 case TrapType.PoisonGas:
-                    if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet) and ((gear & PlayerGear.Shield) == PlayerGear.Shield);
+                    if ((gear & PlayerGear.Helmet) == PlayerGear.Helmet)
                     {
                         return true;
                     }
                     break;
+
                 case TrapType.LavaPit:
                     if ((gear & PlayerGear.Boots) == PlayerGear.Boots)
                     {
                         return true;
                     }
                     break;
+
                 default:
                     return false;
             }
@@ -84,8 +88,8 @@ namespace TrapAnalyzer
         private static void DisplayResult(TrapType trap, bool survives)
         {
             Console.WriteLine(survives
-                ? $"Win {trap}!"
-                : $"Lose {trap}.");
+                ? $"Player survives {trap}!"
+                : $"Player dies due to {trap}.");
         }
     
 }}
