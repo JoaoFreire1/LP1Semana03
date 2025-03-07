@@ -34,7 +34,6 @@ namespace TrapAnalyzer
                     gear |= parsedGear;
                 }
             }
-
             return gear;
         }
 
@@ -46,9 +45,7 @@ namespace TrapAnalyzer
         /// <returns>Wether the player survived the trap or not.</returns>
         private static bool CanSurviveTrap(TrapType trap, PlayerGear gear)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            return trap switch
         }
 
         /// <summary>
@@ -57,9 +54,7 @@ namespace TrapAnalyzer
         /// <param name="trap">The trap the player has fallen into.</param>
         private static void DisplayResult(TrapType trap, bool survives)
         {
-            // ////////// //
-            // CHANGE ME! //
-            // ////////// //
+            Console.WriteLine($"Test")
         }
     }
 }
